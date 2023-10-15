@@ -1,3 +1,3 @@
 # moving-gradient
-nice gradient effect
-*If you like leave a star
+nice gradient effect    return
+If you like leave a star
