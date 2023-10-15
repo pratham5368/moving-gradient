@@ -32,10 +32,6 @@ body {
     padding: clamp(0.25em, 1vw, 1em) clamp(1em, 4vw, 4em);
     text-decoration: none;
     position: relative;
-}
-.light:hover{
-    color: var(--light-blue);
-}
 
 .link:nth-child(3){
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
