@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Pixelify+Sans:wght@600&family=Poppins:wght@300&family=Roboto:wght@400&display=swap');
+
+:root{
+    --blue: #463f96;
+    --light-blue:  #121025;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(10, 10, 10);
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.link {
+    border-top: 1px solid rgba(255, 255, 255, 0.5) ;
+    color: white;
+    display: block;
+    font-family: 'Pixelify Sans', sans-serif;;
+    font-size: clamp(2em, 8vw, 7em);
+    padding: clamp(0.25em, 1vw, 1em) clamp(1em, 4vw, 4em);
+    text-decoration: none;
+    position: relative;
+}
+.light:hover{
+    color: var(--light-blue);
+}
+
+.link:nth-child(3){
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.link:hover:before{
+    transition: width 600ms ease;
+    width: 100%;
+}
+
+.link:before{
+    /*background: linear-gradient(
+        to right,
+        transparent,
+        blue
+    );*/
+    /*background: -webkit-linear-gradient(to right, #8e0e00, #1f1c18);*/
+    background: linear-gradient(to right, transparent,var(--blue), var(--light-blue)); 
+    
+    
+    content: "";
+    position: absolute;
+    content: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0%;
+}
+
+
