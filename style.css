@@ -60,4 +60,7 @@ body {
     width: 0%;
 }
 
+.light:hover{
+    color: var(--light-blue);
+}
 
